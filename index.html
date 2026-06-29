@@ -515,15 +515,15 @@
                             <p class="text-slate-500">Mengetahui,</p>
                             <p class="font-bold text-slate-900 mt-1">Ketua Kelompok KKN 27</p>
                             <div class="h-16"></div>
-                            <p class="font-bold text-slate-900 underline">Fadhil Muhammad</p>
-                            <p class="text-[10px] text-slate-500">NIM. 12111029</p>
+                            <p class="font-bold text-slate-900 underline">Tazakka Syahrul</p>
+                            <p class="text-[10px] text-slate-500">NIM. D1A230150</p>
                         </div>
                         <div>
                             <p id="printSignDate" class="text-slate-500"></p>
                             <p class="font-bold text-slate-900 mt-1">Bendahara Kelompok 27</p>
                             <div class="h-16"></div>
-                            <p class="font-bold text-slate-900 underline">Salma Nuraini</p>
-                            <p class="text-[10px] text-slate-500">NIM. 12111045</p>
+                            <p class="font-bold text-slate-900 underline">Surya Padli</p>
+                            <p class="text-[10px] text-slate-500">NIM. 234260007</p>
                         </div>
                     </div>
                 </div>
@@ -565,6 +565,7 @@
                         <option value="Divisi Acara & Program Kerja">Divisi Acara & Program Kerja</option>
                         <option value="Divisi Logistik & Konsumsi">Divisi Logistik & Konsumsi</option>
                         <option value="Divisi Humas & Dokumentasi">Divisi Humas & Dokumentasi</option>
+                        <option value="Divisi PDD & Dokumentasi">Divisi PDD & Dokumentasi</option>
                     </select>
                 </div>
                 <div class="bg-teal-50 p-4 rounded-xl border border-teal-100">
@@ -803,28 +804,28 @@
         const TARGET_IURAN = 1500000;
 
         window.defaultMembers = [
-            { id: "M001", name: "Fadhil Muhammad", nim: "12111029", phone: "0812-3456-7890", division: "Ketua / Wakil", paidAmount: 1500000 },
-            { id: "M002", name: "Salma Nuraini", nim: "12111045", phone: "0821-9876-5432", division: "Bendahara", paidAmount: 1500000 },
-            { id: "M003", name: "Rizky Ramadhan", nim: "12111012", phone: "0857-1122-3344", division: "Sekretaris", paidAmount: 1500000 },
-            { id: "M004", name: "Aditya Pratama", nim: "12111051", phone: "0819-5566-7788", division: "Divisi Acara & Program Kerja", paidAmount: 1000000 },
-            { id: "M005", name: "Devi Lestari", nim: "12111060", phone: "0813-8899-0011", division: "Divisi Acara & Program Kerja", paidAmount: 1500000 },
-            { id: "M006", name: "Hafiz Al-Rasyid", nim: "12111019", phone: "0838-2233-4455", division: "Divisi Logistik & Konsumsi", paidAmount: 500000 },
-            { id: "M007", name: "Siti Rahmawati", nim: "12111072", phone: "0812-6677-8899", division: "Divisi Logistik & Konsumsi", paidAmount: 1500000 },
-            { id: "M008", name: "Farhan Syahputra", nim: "12111088", phone: "0822-1010-2020", division: "Divisi Humas & Dokumentasi", paidAmount: 1000000 },
-            { id: "M009", name: "Nabila Putri", nim: "12111095", phone: "0856-3030-4040", division: "Divisi Humas & Dokumentasi", paidAmount: 1500000 },
-            { id: "M010", name: "Zidan Maulana", nim: "12111104", phone: "0895-4040-5050", division: "Divisi Logistik & Konsumsi", paidAmount: 0 }
+            { id: "M001", name: "Tazakka Syahrul", nim: "D1A230150", phone: "0812-xxxx-xxxx", division: "Ketua / Wakil", paidAmount: 1500000 },
+            { id: "M002", name: "Vina Tiara Annisa", nim: "E1A230004", phone: "0821-xxxx-xxxx", division: "Sekretaris", paidAmount: 1500000 },
+            { id: "M003", name: "Surya Padli", nim: "234260007", phone: "0857-xxxx-xxxx", division: "Bendahara", paidAmount: 1500000 },
+            { id: "M004", name: "Adisty Fazria", nim: "D1A230158", phone: "0819-xxxx-xxxx", division: "Divisi Humas & Dokumentasi", paidAmount: 1000000 },
+            { id: "M005", name: "Iyan Hardiansyah", nim: "A1A230003", phone: "0813-xxxx-xxxx", division: "Divisi Humas & Dokumentasi", paidAmount: 1500000 },
+            { id: "M006", name: "Sindy Selanisa", nim: "B1A230024", phone: "0838-xxxx-xxxx", division: "Divisi Acara & Program Kerja", paidAmount: 500000 },
+            { id: "M007", name: "Adinda Sevtynova DP", nim: "B1A230033", phone: "0812-xxxx-xxxx", division: "Divisi Acara & Program Kerja", paidAmount: 1500000 },
+            { id: "M008", name: "Dera Ammelia", nim: "C1B230012", phone: "0822-xxxx-xxxx", division: "Divisi Acara & Program Kerja", paidAmount: 1000000 },
+            { id: "M009", name: "Dian Hermansyah", nim: "C1B230048", phone: "0856-xxxx-xxxx", division: "Divisi Acara & Program Kerja", paidAmount: 1500000 },
+            { id: "M010", name: "M. Rian Maulana", nim: "C1B230098", phone: "0895-xxxx-xxxx", division: "Divisi PDD & Dokumentasi", paidAmount: 0 }
         ];
 
         window.defaultTransactions = [
-            { id: "KKN-2026-0001", date: "2026-06-15", type: "Pemasukan", category: "Iuran Anggota", amount: 1500000, description: "Iuran Fadhil Muhammad (Lunas)", receiptNo: "KKN27-01", memberId: "M001" },
-            { id: "KKN-2026-0002", date: "2026-06-15", type: "Pemasukan", category: "Iuran Anggota", amount: 1500000, description: "Iuran Salma Nuraini (Lunas)", receiptNo: "KKN27-02", memberId: "M002" },
-            { id: "KKN-2026-0003", date: "2026-06-16", type: "Pemasukan", category: "Iuran Anggota", amount: 1500000, description: "Iuran Rizky Ramadhan (Lunas)", receiptNo: "KKN27-03", memberId: "M003" },
-            { id: "KKN-2026-0004", date: "2026-06-16", type: "Pemasukan", category: "Iuran Anggota", amount: 1000000, description: "Iuran Aditya Pratama (Bayar Ke-1)", receiptNo: "KKN27-04", memberId: "M004" },
-            { id: "KKN-2026-0005", date: "2026-06-17", type: "Pemasukan", category: "Iuran Anggota", amount: 1500000, description: "Iuran Devi Lestari (Lunas)", receiptNo: "KKN27-05", memberId: "M005" },
-            { id: "KKN-2026-0006", date: "2026-06-17", type: "Pemasukan", category: "Iuran Anggota", amount: 500000, description: "Iuran Hafiz Al-Rasyid (Bayar Ke-1)", receiptNo: "KKN27-06", memberId: "M006" },
-            { id: "KKN-2026-0007", date: "2026-06-18", type: "Pemasukan", category: "Iuran Anggota", amount: 1500000, description: "Iuran Siti Rahmawati (Lunas)", receiptNo: "KKN27-07", memberId: "M007" },
-            { id: "KKN-2026-0008", date: "2026-06-18", type: "Pemasukan", category: "Iuran Anggota", amount: 1000000, description: "Iuran Farhan Syahputra (Bayar Ke-1)", receiptNo: "KKN27-08", memberId: "M008" },
-            { id: "KKN-2026-0009", date: "2026-06-19", type: "Pemasukan", category: "Iuran Anggota", amount: 1500000, description: "Iuran Nabila Putri (Lunas)", receiptNo: "KKN27-09", memberId: "M009" },
+            { id: "KKN-2026-0001", date: "2026-06-15", type: "Pemasukan", category: "Iuran Anggota", amount: 1500000, description: "Iuran Tazakka Syahrul (Lunas)", receiptNo: "KKN27-01", memberId: "M001" },
+            { id: "KKN-2026-0002", date: "2026-06-15", type: "Pemasukan", category: "Iuran Anggota", amount: 1500000, description: "Iuran Vina Tiara Annisa (Lunas)", receiptNo: "KKN27-02", memberId: "M002" },
+            { id: "KKN-2026-0003", date: "2026-06-16", type: "Pemasukan", category: "Iuran Anggota", amount: 1500000, description: "Iuran Surya Padli (Lunas)", receiptNo: "KKN27-03", memberId: "M003" },
+            { id: "KKN-2026-0004", date: "2026-06-16", type: "Pemasukan", category: "Iuran Anggota", amount: 1000000, description: "Iuran Adisty Fazria (Bayar Ke-1)", receiptNo: "KKN27-04", memberId: "M004" },
+            { id: "KKN-2026-0005", date: "2026-06-17", type: "Pemasukan", category: "Iuran Anggota", amount: 1500000, description: "Iuran Iyan Hardiansyah (Lunas)", receiptNo: "KKN27-05", memberId: "M005" },
+            { id: "KKN-2026-0006", date: "2026-06-17", type: "Pemasukan", category: "Iuran Anggota", amount: 500000, description: "Iuran Sindy Selanisa (Bayar Ke-1)", receiptNo: "KKN27-06", memberId: "M006" },
+            { id: "KKN-2026-0007", date: "2026-06-18", type: "Pemasukan", category: "Iuran Anggota", amount: 1500000, description: "Iuran Adinda Sevtynova DP (Lunas)", receiptNo: "KKN27-07", memberId: "M007" },
+            { id: "KKN-2026-0008", date: "2026-06-18", type: "Pemasukan", category: "Iuran Anggota", amount: 1000000, description: "Iuran Dera Ammelia (Bayar Ke-1)", receiptNo: "KKN27-08", memberId: "M008" },
+            { id: "KKN-2026-0009", date: "2026-06-19", type: "Pemasukan", category: "Iuran Anggota", amount: 1500000, description: "Iuran Dian Hermansyah (Lunas)", receiptNo: "KKN27-09", memberId: "M009" },
             { id: "KKN-2026-0010", date: "2026-06-20", type: "Pengeluaran", category: "ATK", amount: 125000, description: "Pembelian Buku Kas & Spidol Papan Tulis", receiptNo: "NOTA-001", memberId: "" },
             { id: "KKN-2026-0011", date: "2026-06-21", type: "Pengeluaran", category: "Transportasi", amount: 350000, description: "Sewa mobil operasional survey pertama", receiptNo: "NOTA-002", memberId: "" },
             { id: "KKN-2026-0012", date: "2026-06-22", type: "Pengeluaran", category: "Konsumsi", amount: 540000, description: "Makan bersama rapat perdana desa", receiptNo: "NOTA-003", memberId: "" },
